@@ -12,6 +12,7 @@ module "enterprise_scale" {
   deploy_online_landing_zones  = true
   root_id                      = var.root_id
   root_name                    = var.root_name
+  library_path                 = "${path.root}/lib"
   subscription_id_connectivity = var.subscription_id_connectivity
   subscription_id_identity     = var.subscription_id_identity
   subscription_id_management   = var.subscription_id_management
